@@ -5,9 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Privacy Policy for RiftScan">
   <title>Privacy Policy – RiftScan</title>
-  <!-- Load Tailwind CSS first -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Then configure it -->
   <script>
     tailwind.config = {
       theme: {
@@ -25,7 +23,6 @@
   </script>
 </head>
 <body class="bg-primary text-text leading-relaxed">
-  <!-- Header -->
   <header class="bg-primary-dark shadow">
     <div class="container mx-auto px-6 py-4 flex items-center">
       <a href="index.html" class="flex items-center">
@@ -35,34 +32,76 @@
     </div>
   </header>
 
-  <!-- Privacy Policy Content -->
   <section class="py-20">
     <div class="container mx-auto px-6 text-text">
       <h2 class="text-3xl font-bold text-center mb-6 text-secondary">Privacy Policy – RiftScan</h2>
-      <p class="mb-4"><strong>Effective Date:</strong> May 29, 2025</p>
-      <h3 class="text-xl font-semibold mb-2">1. General Information</h3>
-      <p>RiftScan is a mobile application designed to help users catalogue and manage their personal collection of Star Wars Unlimited trading cards. The app does not require login or any personal data input.</p>
+      <p class="mb-4"><strong>Effective Date:</strong> November 8, 2025</p>
+      
+      <h3 class="text-xl font-semibold mb-2 mt-4">1. General Information</h3>
+      <p>RiftScan is a mobile application designed to help users catalogue and manage their personal collection of&nbsp;Star Wars Unlimited&nbsp;trading cards. The app can be used fully offline without creating an account. Users may optionally sign in to enable Premium features, including cloud synchronization.</p>
+
       <h3 class="text-xl font-semibold mb-2 mt-4">2. Data Collected</h3>
-      <p>The app only collects data about the user's card collection, such as card names, quantities, conditions, and any other notes the user may choose to input manually.</p>
-      <h3 class="text-xl font-semibold mb-2 mt-4">3. No Personal Data</h3>
-      <p>RiftScan does not collect any personal data such as name, email address, phone number, GPS location, device data, or media files.</p>
+      <ul class="list-disc list-outside ml-6 mb-4">
+        <li class="mb-2"><strong>Offline use (no login / no subscription):</strong> Card collection data entered manually by the user (card names, quantities, conditions, notes). This data is stored only on the user's device and is never transmitted externally.</li>
+        <li class="mb-2"><strong>Login without Premium subscription:</strong> Authentication data from Google or Apple Sign-In handled by Firebase Authentication (e.g., email address, display name, unique user ID). Subscription status metadata handled by RevenueCat. Card collection data remains local only and is not uploaded or synchronized.</li>
+        <li class="mb-2"><strong>Login with Premium subscription (required for cloud sync):</strong> Authentication data (Firebase Authentication) and subscription data (RevenueCat). The user's card collection, decks, and lists are stored in Firebase Cloud Firestore for cloud backup and synchronization.</li>
+        <li class="mb-2"><strong>Technical data:</strong> Locally cached preferences (e.g., subscription status) stored using SharedPreferences on the device.</li>
+      </ul>
+
+      <h3 class="text-xl font-semibold mb-2 mt-4">3. Purpose of Data Use</h3>
+      <ul class="list-disc list-outside ml-6 mb-4">
+        <li class="mb-2">To provide basic functionality for local collection management on device.</li>
+        <li class="mb-2">To enable <strong>Premium-only</strong> features, including cloud backup and synchronization via Firebase Cloud Firestore.</li>
+        <li class="mb-2">To manage Premium subscriptions and purchases via RevenueCat (validation, restoration across devices).</li>
+      </ul>
+
       <h3 class="text-xl font-semibold mb-2 mt-4">4. Data Storage</h3>
-      <p>All data is stored locally on the user's device. No data is transmitted to any external servers or cloud services. The application's developer doesn't have access to any user data.</p>
+      <ul class="list-disc list-outside ml-6 mb-4">
+        <li class="mb-2"><strong>Local Storage:</strong> By default, all collection data is stored only on the user's device.</li>
+        <li class="mb-2"><strong>Cloud Storage (Premium users only):</strong> When subscribed and logged in, user data (collections, decks, lists) is stored in <strong>Google Firebase Cloud Firestore</strong> and associated with the user's account.</li>
+        <li class="mb-2"><strong>Subscriptions:</strong> Subscription and purchase information is processed and stored by <strong>RevenueCat</strong>, and also handled through the App Store or Google Play Store depending on platform.</li>
+      </ul>
+      <p>The developer does not access individual user data directly.</p>
+
       <h3 class="text-xl font-semibold mb-2 mt-4">5. Data Sharing</h3>
-      <p>No data is shared, sold, or transferred to third parties.</p>
+      <p class="mb-4">The app does not sell or share data with third parties for advertising or marketing purposes. The following service providers are used strictly to deliver app functionality:</p>
+      <ul class="list-disc list-outside ml-6 mb-4">
+        <li class="mb-2"><strong>Google Firebase:</strong> Authentication (Google/Apple Sign-In via Firebase Authentication) and, for Premium users only, cloud storage (Cloud Firestore).
+          <br><a href="https://policies.google.com/privacy" class="text-secondary hover:underline" target="_blank" rel="noopener noreferrer">View Google Privacy Policy</a>
+        </li>
+        <li class="mb-2"><strong>Apple (Sign in with Apple):</strong> Authentication for iOS/macOS users.
+          <br><a href="https://www.apple.com/legal/privacy/en-ww/" class="text-secondary hover:underline" target="_blank" rel="noopener noreferrer">View Apple Privacy Policy</a>
+        </li>
+        <li class="mb-2"><strong>RevenueCat:</strong> Subscription and purchase management.
+          <br><a href="https://www.revenuecat.com/privacy" class="text-secondary hover:underline" target="_blank" rel="noopener noreferrer">View RevenueCat Privacy Policy</a>
+        </li>
+        <li class="mb-2"><strong>Google Play Store:</strong> Handles billing and subscription purchases for Android users.
+          <br><a href="https://policies.google.com/terms" class="text-secondary hover:underline" target="_blank" rel="noopener noreferrer">Google Play Terms & Policies</a>
+        </li>
+        <li class="mb-2"><strong>Apple App Store:</strong> Handles billing and subscription purchases for iOS/macOS users.
+          <br><a href="https://www.apple.com/legal/internet-services/itunes/us/terms.html" class="text-secondary hover:underline" target="_blank" rel="noopener noreferrer">Apple Media Services Terms & Conditions</a>
+        </li>
+      </ul>
+
       <h3 class="text-xl font-semibold mb-2 mt-4">6. Tracking Technologies</h3>
-      <p>The app does not use cookies, tracking scripts, analytics tools, or any similar technologies.</p>
-      <h3 class="text-xl font-semibold mb-2 mt-4">7. Data Deletion</h3>
-      <p>Users can delete all stored data directly through the settings section of the app.</p>
+      <p>The app does <strong>not</strong> use advertising SDKs, cookies, or analytics tools. Firebase Authentication, RevenueCat, and the app stores may process device and account identifiers strictly for login, fraud prevention, subscription validation, and billing.</p>
+
+      <h3 class="text-xl font-semibold mb-2 mt-4">7. Data Retention and Deletion</h3>
+      <ul class="list-disc list-outside ml-6 mb-4">
+        <li class="mb-2"><strong>Offline/local users:</strong> Data exists only on the device and can be deleted by uninstalling the app or using in-app options to clear data.</li>
+        <li class="mb-2"><strong>Premium users:</strong> Cloud data stored in Firebase can be deleted upon request by contacting the developer (see Section 9).</li>
+        <li class="mb-2"><strong>Subscription data retention</strong> follows App Store and Google Play billing policies (managed by RevenueCat and respective stores).</li>
+      </ul>
+
       <h3 class="text-xl font-semibold mb-2 mt-4">8. Children's Privacy</h3>
-      <p>The app is not intended for use by children under the age of 13.</p>
+      <p>The app is not intended for use by children under the age of 13. If you believe a child has used the app and provided personal data, please contact the developer for deletion.</p>
+
       <h3 class="text-xl font-semibold mb-2 mt-4">9. Contact</h3>
-      <p>If you have any questions or concerns regarding privacy, please contact me at:</p>
+      <p class="mb-2">If you have any questions or privacy-related requests, please contact:</p>
       <p><a href="mailto:drews.piotr@gmail.com" class="text-secondary hover:underline">drews.piotr@gmail.com</a></p>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="bg-primary-dark border-t border-surface py-6">
     <div class="container mx-auto px-6 text-center text-sm text-text">
       <a href="index.html" class="hover:text-secondary">Back to Home</a>
@@ -71,4 +110,3 @@
   </footer>
 </body>
 </html>
-
