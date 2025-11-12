@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="RiftScan Support" />
+  <meta name="theme-color" content="#000000" />
+  <title>Support - RiftScan</title>
+
+  <link rel="icon" href="assets/riftscan_icon.png" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#000000',       /* Pure black for main background */
+            'primary-dark': '#111111',/* Slightly lighter for sections */
+            surface: '#1a1a1a',       /* Dark surface cards */
+            secondary: '#FBC02D',     /* Mustard yellow accent */
+            text: '#EEEEEE'           /* Off-white text */
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-primary text-text leading-relaxed">
+  <header class="bg-primary-dark shadow">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="flex items-center">
+        <img
+          src="assets/riftscan_icon.png"
+          alt="RiftScan — logo"
+          class="h-8 mr-2"
+          onerror="this.onerror=null;this.src='https://placehold.co/32x32/000000/FBC02D?text=RS';"
+        />
+        <span class="text-xl font-bold text-secondary">RiftScan</span>
+      </a>
+
+      <nav class="flex items-center space-x-6 whitespace-nowrap" aria-label="Główna nawigacja">
+        <a href="index.html#features" class="hover:text-secondary">Features</a>
+        <a href="privacy.html" class="hover:text-secondary">Privacy Policy</a>
+        <a href="support.html" class="hover:text-secondary" aria-current="page">Support</a>
+        <a
+          href="https://partner.tcgplayer.com/K0daaa"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center"
+          aria-label="Shop on TCGplayer (otwiera się w nowej karcie)"
+        >
+          <img
+            src="assets/tcgplayer_logo.png"
+            alt="Shop on TCGplayer"
+            class="h-8 w-32 object-contain"
+            onerror="this.onerror=null;this.src='https://placehold.co/128x32/1a1a1a/EEEEEE?text=Shop+TCGplayer';"
+          />
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="bg-primary-dark py-20">
+      <div class="container mx-auto px-6">
+        <div class="max-w-3xl mx-auto bg-surface p-8 rounded-lg shadow-lg">
+          <h1 class="text-3xl font-bold text-center mb-8 text-secondary">Contact Support</h1>
+
+          <p class="text-center mb-8">
+            Have a question, bug report, or feedback? Fill out the form below, and we'll get back to you as soon as possible.
+          </p>
+
+          <!-- TODO: Podmień YOUR_FORM_ID na realne ID z Formspree -->
+          <form action="https://formspree.io/f/xovyqovj" method="POST" novalidate>
+            <div class="mb-6">
+              <label for="email" class="block text-sm font-medium text-text mb-2">Your Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                autocomplete="email"
+                inputmode="email"
+                class="block w-full px-4 py-3 bg-primary border border-surface rounded-lg focus:ring-2 focus:ring-secondary focus:border-secondary"
+                placeholder="you@example.com"
+                aria-describedby="email-help"
+              />
+              <p id="email-help" class="mt-2 text-xs opacity-80">We’ll use this to contact you.</p>
+            </div>
+
+            <div class="mb-6">
+              <label for="subject" class="block text-sm font-medium text-text mb-2">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                required
+                autocomplete="off"
+                class="block w-full px-4 py-3 bg-primary border border-surface rounded-lg focus:ring-2 focus:ring-secondary focus:border-secondary"
+                placeholder="e.g., Scanning issue with Set X"
+              />
+            </div>
+
+            <div class="mb-8">
+              <label for="message" class="block text-sm font-medium text-text mb-2">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+                class="block w-full px-4 py-3 bg-primary border border-surface rounded-lg focus:ring-2 focus:ring-secondary focus:border-secondary"
+                placeholder="Please describe the issue in detail..."
+              ></textarea>
+            </div>
+
+            <div class="text-center">
+              <button
+                type="submit"
+                class="px-8 py-3 bg-secondary text-primary font-bold rounded-lg hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 focus:ring-offset-surface transition-colors duration-200"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-primary-dark border-t border-surface py-6">
+    <div class="container mx-auto px-6 text-center text-sm text-text flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+      <p>&copy; 2025 RiftScan. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
