@@ -62,28 +62,28 @@
   </header>
 
   <main>
-    <!-- Hero -->
     <section class="bg-primary-dark text-text py-20">
       <div class="container mx-auto px-6 text-center">
         <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Scan Cards, Build Decks</h1>
         <p class="text-lg md:text-2xl mb-8">Intuitive mobile app for card collectors</p>
 
         <div class="flex flex-wrap justify-center items-center gap-6">
-          <!-- Google Play (coming soon) -->
-          <div class="relative inline-block" aria-live="polite">
+          
+          <a 
+            href="https://play.google.com/store/apps/details?id=com.drews.riftscan" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="inline-block hover:opacity-80 transition-opacity"
+            aria-label="Get it on Google Play"
+          >
             <img
               src="assets/google_play_button.png"
-              alt="Google Play — Coming soon"
-              class="h-14 opacity-50"
-              onerror="this.onerror=null;this.src='https://placehold.co/178x56/1a1a1a/EEEEEE?text=Google+Play'; this.classList.add('opacity-50');"
+              alt="Get it on Google Play"
+              class="h-14"
+              onerror="this.onerror=null;this.src='https://placehold.co/178x56/1a1a1a/EEEEEE?text=Google+Play';"
             />
-            <span
-              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold bg-black/70 px-4 py-2 rounded"
-              aria-hidden="true"
-            >Coming Soon</span>
-          </div>
+          </a>
 
-          <!-- App Store (coming soon) -->
           <div class="relative inline-block" aria-live="polite">
             <img
               src="assets/appstore_button.svg"
@@ -100,7 +100,6 @@
       </div>
     </section>
 
-    <!-- Features -->
     <section id="features" class="bg-primary-dark py-20">
       <div class="container mx-auto px-6">
         <h2 class="text-3xl font-bold text-center mb-12 text-secondary">Key Features</h2>
