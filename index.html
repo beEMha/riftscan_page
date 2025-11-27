@@ -69,6 +69,7 @@
 
         <div class="flex flex-wrap justify-center items-center gap-6">
           
+          <!-- Google Play Button -->
           <a 
             href="https://play.google.com/store/apps/details?id=com.drews.riftscan" 
             target="_blank" 
@@ -84,18 +85,22 @@
             />
           </a>
 
-          <div class="relative inline-block" aria-live="polite">
+          <!-- App Store Button (Updated) -->
+          <a
+            href="https://apps.apple.com/us/app/riftscan-card-deck-tool/id6754499336"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block hover:opacity-80 transition-opacity"
+            aria-label="Download on the App Store"
+          >
             <img
               src="assets/appstore_button.svg"
-              alt="App Store — Coming soon"
-              class="h-14 opacity-50"
-              onerror="this.onerror=null;this.src='https://placehold.co/168x56/1a1a1a/EEEEEE?text=App+Store'; this.classList.add('opacity-50');"
+              alt="Download on the App Store"
+              class="h-14"
+              onerror="this.onerror=null;this.src='https://placehold.co/168x56/1a1a1a/EEEEEE?text=App+Store';"
             />
-            <span
-              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold bg-black/70 px-4 py-2 rounded"
-              aria-hidden="true"
-            >Coming Soon</span>
-          </div>
+          </a>
+
         </div>
       </div>
     </section>
