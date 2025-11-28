@@ -35,38 +35,49 @@
   <section class="py-20">
     <div class="container mx-auto px-6 text-text">
       <h2 class="text-3xl font-bold text-center mb-6 text-secondary">Privacy Policy – RiftScan</h2>
-      <p class="mb-4"><strong>Effective Date:</strong> November 8, 2025</p>
+      <p class="mb-4"><strong>Effective Date:</strong> November 28, 2025</p>
       
       <h3 class="text-xl font-semibold mb-2 mt-4">1. General Information</h3>
-      <p>RiftScan is a mobile application designed to help users catalogue and manage their personal collection of&nbsp;Riftbound&nbsp;trading cards. The app can be used fully offline without creating an account. Users may optionally sign in to enable Premium features, including cloud synchronization.</p>
+      <p>RiftScan is a mobile application designed to help users catalogue and manage their personal collection of&nbsp;Riftbound&nbsp;trading cards. The app can be used fully offline without creating an account. Users may optionally sign in to enable Community features or Premium cloud synchronization.</p>
 
       <h3 class="text-xl font-semibold mb-2 mt-4">2. Data Collected</h3>
       <ul class="list-disc list-outside ml-6 mb-4">
-        <li class="mb-2"><strong>Offline use (no login / no subscription):</strong> Card collection data entered manually by the user (card names, quantities, conditions, notes). This data is stored only on the user's device and is never transmitted externally.</li>
-        <li class="mb-2"><strong>Login without Premium subscription:</strong> Authentication data from Google or Apple Sign-In handled by Firebase Authentication (e.g., email address, display name, unique user ID). Subscription status metadata handled by RevenueCat. Card collection data remains local only and is not uploaded or synchronized.</li>
-        <li class="mb-2"><strong>Login with Premium subscription (required for cloud sync):</strong> Authentication data (Firebase Authentication) and subscription data (RevenueCat). The user's card collection, decks, and lists are stored in Firebase Cloud Firestore for cloud backup and synchronization.</li>
+        <li class="mb-2"><strong>Offline use (no login):</strong> Card collection data entered manually by the user (card names, quantities, conditions, notes). This data is stored only on the user's device and is never transmitted externally.</li>
+        <li class="mb-2"><strong>Login (General):</strong> Authentication data from Google or Apple Sign-In handled by Firebase Authentication (e.g., email address, display name/username, unique user ID).</li>
+        <li class="mb-2"><strong>Community Features (Optional):</strong> If a logged-in user chooses to publish a deck, post a comment, or vote on content, this specific data (Deck lists including cards, Comment text, Username, and Vote interactions) is uploaded to Firebase Cloud Firestore to be visible to other users. This occurs regardless of Premium subscription status.</li>
+        <li class="mb-2"><strong>Login with Premium subscription (Cloud Sync):</strong> In addition to the above, the user's entire private card collection, private decks, and lists are stored in Firebase Cloud Firestore for backup and synchronization across devices.</li>
         <li class="mb-2"><strong>Technical data:</strong> Locally cached preferences (e.g., subscription status) stored using SharedPreferences on the device.</li>
       </ul>
 
       <h3 class="text-xl font-semibold mb-2 mt-4">3. Purpose of Data Use</h3>
       <ul class="list-disc list-outside ml-6 mb-4">
-        <li class="mb-2">To provide basic functionality for local collection management on device.</li>
-        <li class="mb-2">To enable <strong>Premium-only</strong> features, including cloud backup and synchronization via Firebase Cloud Firestore.</li>
-        <li class="mb-2">To manage Premium subscriptions and purchases via RevenueCat (validation, restoration across devices).</li>
+        <li class="mb-2">To provide basic functionality for local collection management on the device.</li>
+        <li class="mb-2">To enable community interactions, such as sharing public decks, commenting on decks, and voting.</li>
+        <li class="mb-2">To enable <strong>Premium-only</strong> features, specifically cloud backup and synchronization via Firebase Cloud Firestore.</li>
+        <li class="mb-2">To manage Premium subscriptions and purchases via RevenueCat (validation and restoration across devices).</li>
       </ul>
 
       <h3 class="text-xl font-semibold mb-2 mt-4">4. Data Storage</h3>
       <ul class="list-disc list-outside ml-6 mb-4">
-        <li class="mb-2"><strong>Local Storage:</strong> By default, all collection data is stored only on the user's device.</li>
-        <li class="mb-2"><strong>Cloud Storage (Premium users only):</strong> When subscribed and logged in, user data (collections, decks, lists) is stored in <strong>Google Firebase Cloud Firestore</strong> and associated with the user's account.</li>
-        <li class="mb-2"><strong>Subscriptions:</strong> Subscription and purchase information is processed and stored by <strong>RevenueCat</strong>, and also handled through the App Store or Google Play Store depending on platform.</li>
+        <li class="mb-2"><strong>Local Storage:</strong> By default, all private collection data is stored only on the user's device.</li>
+        <li class="mb-2"><strong>Cloud Storage:</strong>
+          <ul class="list-disc list-outside ml-6 mt-1">
+            <li><strong>Public Data:</strong> Decks and comments explicitly published by the user are stored in Google Firebase Cloud Firestore.</li>
+            <li><strong>Private Data (Premium only):</strong> When subscribed, private collections and lists are stored in Google Firebase Cloud Firestore associated with the user's account.</li>
+          </ul>
+        </li>
+        <li class="mb-2"><strong>Subscriptions:</strong> Subscription and purchase information is processed and stored by <strong>RevenueCat</strong>, and also handled through the App Store or Google Play Store depending on the platform.</li>
       </ul>
-      <p>The developer does not access individual user data directly.</p>
+      <p>The developer does not access individual private user data directly.</p>
 
       <h3 class="text-xl font-semibold mb-2 mt-4">5. Data Sharing</h3>
-      <p class="mb-4">The app does not sell or share data with third parties for advertising or marketing purposes. The following service providers are used strictly to deliver app functionality:</p>
+      <p class="mb-4">The app does not sell or share data with third parties for advertising or marketing purposes.</p>
+      
+      <p class="mb-4 text-secondary"><strong>Publicly Visible Information:</strong> If you use the Community features to publish a deck or post a comment, the content of that deck (cards included), your chosen username, and the content of your comment will be visible to other users of the application.</p>
+
+      <p class="mb-2">The following service providers are used strictly to deliver app functionality:</p>
       <ul class="list-disc list-outside ml-6 mb-4">
-        <li class="mb-2"><strong>Google Firebase:</strong> Authentication (Google/Apple Sign-In via Firebase Authentication) and, for Premium users only, cloud storage (Cloud Firestore).
+        <li class="mb-2"><strong>Google Firebase:</strong> Authentication (Google/Apple Sign-In) and Cloud Storage (Firestore).
           <br><a href="https://policies.google.com/privacy" class="text-secondary hover:underline" target="_blank" rel="noopener noreferrer">View Google Privacy Policy</a>
         </li>
         <li class="mb-2"><strong>Apple (Sign in with Apple):</strong> Authentication for iOS/macOS users.
@@ -88,8 +99,8 @@
 
       <h3 class="text-xl font-semibold mb-2 mt-4">7. Data Retention and Deletion</h3>
       <ul class="list-disc list-outside ml-6 mb-4">
-        <li class="mb-2"><strong>Offline/local users:</strong> Data exists only on the device and can be deleted by uninstalling the app or using in-app options to clear data.</li>
-        <li class="mb-2"><strong>Premium users:</strong> Cloud data stored in Firebase can be deleted upon request by contacting the developer (see Section 9).</li>
+        <li class="mb-2"><strong>Local Data:</strong> Data exists only on the device and can be deleted by uninstalling the app or using in-app options to clear data.</li>
+        <li class="mb-2"><strong>Cloud Data (Account Deletion):</strong> Users may request the deletion of their account and associated cloud data (including public posts and private backups) by contacting the developer or using the account deletion option within the app (if available).</li>
         <li class="mb-2"><strong>Subscription data retention</strong> follows App Store and Google Play billing policies (managed by RevenueCat and respective stores).</li>
       </ul>
 
